@@ -10,3 +10,5 @@ redirect_from:
 I am an astronomy student interested in (binary) stellar evolution and populations, and Galactic evolution. I am an incoming Astronomy & Astrophysics PhD student at Harvard University.
 
 I received my B.S. in Physics and Astronomy & Astrophysics from (_The_) Ohio State University and am originally from Columbus, OH.
+
+(This site is a work in progress--please excuse typos and bugs!)
