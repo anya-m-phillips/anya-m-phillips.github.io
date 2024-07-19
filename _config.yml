@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Your Name / Site Title"
+title                    : "Anya Phillips"
 title_separator          : "-"
 name                     : &name "Anya Phillips"
 description              : &description "Astrophysics Ph.D. Student"
@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Anya Phillips"
   pronouns         : "they/she"  
-  bio              : "Astronophysics Ph.D. student"
+  bio              : "Astrophysics Ph.D. student"
   # location         : "Boston, MA"
   employer         : "Harvard University"
   # uri              : # URL
