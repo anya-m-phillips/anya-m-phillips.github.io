@@ -7,8 +7,12 @@ redirect_from:
   - /about.html
 ---
 
-I am an incoming NSF Graduate Research Fellow Astronomy & Astrophysics at Harvard University. I am interested in (binary) stellar evolution, stellar populations, and Galactic evolution.
+I am an incoming NSF Graduate Research Fellow in Astronomy & Astrophysics at Harvard University. I am interested in (binary) stellar evolution, stellar populations, and Galactic evolution.
 
-I received my B.S. in Physics and Astronomy & Astrophysics from (_the_) Ohio State University and am originally from Columbus, OH.
+I received my B.S. in Physics and Astronomy & Astrophysics from _the_ Ohio State University and am originally from Columbus, OH.
 
-(This site is a work in progress so please my excuse typos and bugs!)
+
+
+
+---
+This site is a work in progress so please my excuse typos and bugs
