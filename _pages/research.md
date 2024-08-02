@@ -11,10 +11,9 @@ author_profile: true
 
 ### Statistical Estimates of Population-Level Binary Properties
 
-Building on my work with spotted rotational variables, this project develops a method to estimate the average primary masses, companion mass ranges, inclination limits for recognizing a rotational variable, and spreads in primary mass for populations of binary stars. The model fits a population's distribution in binary mass function (a cumbersome but observable combination of the two companion masses and orbital inclination) and allows for a probability that some of the mass functions are incorrectly estimated. We test the method on synthetic data to assess its sensitivity to each model parameter, finding that we are most sensitive to the average primary mass and companion mass range, with less sensitivity to inclination limit and primary mass spread. We then apply the model to the MS2b, G1/3, G2, and G4b stars described below.
+Building on my work with spotted rotational variables, this project develops a Monte Carlo based method to estimate the average primary masses, companion mass ranges, inclination limits for recognizing a rotational variable, and spreads in primary mass for populations of binary stars. The model fits a population's distribution in binary mass function and allows for a probability that some of the mass functions are incorrectly estimated. We test the method on synthetic data to assess its sensitivity to each model parameter, finding that we are most sensitive to the average primary mass and companion mass range, with less sensitivity to inclination limit and primary mass spread. We then apply the model to the MS2b, G1/3, G2, and G4b stars described below.
 
-This work is in preparation, to be submitted to MNRAS hopefully by the end of summer, 2024.
-
+This work is submitted to MNRAS, you can view the preprint on arXiv: [arXiv:2407.20328v1](https://arxiv.org/abs/2407.20328#)
 
 ---
 
