@@ -23,12 +23,12 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Anya Phillips"
-  # pronouns         : "they/she"  
+  pronouns         : "they/she"  
   bio              : "Astrophysics Ph.D. student"
   # location         : "Boston, MA"
   employer         : "Harvard University"
   # uri              : # URL
-  email            : "aphillips@g.harvard.edu" 
+  email            : "anya.phillips@cfa.harvard.edu" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
