@@ -40,6 +40,6 @@ Accurate determinations of stellar age and mass are crucial to many areas of Ast
 
 ![stelnet plot](../images/post_age.png)
 
-To learn more, you can check out my [REU project report](../files/stelnet_summer.pdf), [live-streamed REU symposium talk](https://www.youtube.com/live/BS4W6ua18c4?si=DTzKrgAEs4IxsC2a&t=7130), and [AAS poster abstract](https://ui.adsabs.harvard.edu/abs/2024AAS...24330302P/abstract).
+To learn more, you can check out my [REU project report](../files/stelnet_summer.pdf), [live-streamed REU symposium talk](https://www.youtube.com/live/BS4W6ua18c4?si=DTzKrgAEs4IxsC2a&t=7130), and [AAS iPoster](https://aas242-aas.ipostersessions.com/?s=03-E6-80-2D-D7-AC-E4-8B-0F-CB-EF-36-DF-2A-EE-C0).
 
 This work remains unpublished (although the code is all publicly available on GitHub), but a potential next step would be to alter the model to make age/mass estimates based on _Gaia_ photometry (rather than stellar surface parameters) and compare its performance on a large sample of stars to other neural network-based age estimators.
