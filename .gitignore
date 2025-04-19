@@ -2,7 +2,7 @@
 _site/
 
 ### ignore the sitemap ;; 
-assets/
+# assets/
 # markdown_generator/
 teaching/
 _posts/
@@ -17,7 +17,7 @@ _pages/category-archive.html
 _pages/tag-archive.html
 _pages/portfolio.html
 _pages/page-archive.html
-_pages/collection-archive.html
+# _pages/collection-archive.html
 # Ignore the directory for local files during development
 local/
 
