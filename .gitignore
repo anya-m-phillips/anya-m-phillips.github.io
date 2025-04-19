@@ -1,6 +1,23 @@
 # Ignore the contents of the _site directory
 _site/
 
+### ignore the sitemap ;; 
+assets/
+# markdown_generator/
+teaching/
+_posts/
+_talks/
+_publications/
+_portfolio/
+_pages/talks.html
+_pages/teaching.html
+_pages/talkmap.html
+_pages/year-archive.html
+_pages/category-archive.html
+_pages/tag-archive.html
+_pages/portfolio.html
+_pages/page-archive.html
+_pages/collection-archive.html
 # Ignore the directory for local files during development
 local/
 
