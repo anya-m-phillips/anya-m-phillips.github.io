@@ -15,7 +15,7 @@ Building on my work with spotted rotational variables, this project develops a M
 
 ![binaries](../images/ROTfits_demo.png)
 
-This work is submitted to MNRAS, you can view the preprint on arXiv: [arXiv:2407.20328v1](https://arxiv.org/abs/2407.20328#)
+This work is published in MNRAS, read more [here](https://doi.org/10.1093/mnras/staf634)
 
 
 
