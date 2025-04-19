@@ -29,7 +29,7 @@ _pages/page-archive.html
 _pages/publications.md
 _pages/non-menu-page.md
 _pages/markdown.md
-
+# _pages/sitemap.md
 
 
 # Ignore the directory for local files during development
