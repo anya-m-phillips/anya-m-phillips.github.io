@@ -25,7 +25,7 @@
 @import "notices";
 @import "masthead";
 @import "navigation";
-@import "footer";
+// @import "footer";
 @import "syntax";
 
 @import "forms";
@@ -41,7 +41,7 @@
 @import "print";
 
 body {
-  background-color:rgb(3, 243, 151);
+  background-color:rgb(243, 3, 191);
 }
 
 // site-header {
@@ -49,7 +49,7 @@ body {
 // }
 
 site-footer {
-    background-color:rgb(243, 3, 23) !important;
+    background-color:rgb(3, 55, 243) !important;
 }
 
 // navbar {
