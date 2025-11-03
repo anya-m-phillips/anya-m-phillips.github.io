@@ -7,4 +7,4 @@ author_profile: false
 
 testing testing:
 
-![velocities](../images/velocity_signature_analytic.mp4)
+![velocities](../images/velocity_signature_analytic.mp4)<video src="../images/velocity_signature_analytic.mp4" controls preload></video>
