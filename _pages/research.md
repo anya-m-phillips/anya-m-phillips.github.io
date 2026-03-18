@@ -5,13 +5,23 @@ permalink: /research/
 author_profile: true
 ---
 
+---
+
+
+### Binarity of Globular Cluster Streams
+
+The stellar streams of globular clusters have the potential to serve as dark matter detectors, as long as the individual orbital motions of binary stars do not confuse our kinematic measurements of them. In this paper, we use direct N-body simulations to study the binary populations in GC streams given in-cluster dynamical processing. We include a first estimate of the added radial velocity dispersion from undetected binaries in upcoming dark matter-focused surveys like [Via](https://via-project.org/) (below).
+
+![streamDispersion](../images/streamDispersion.png)
+
+This work is submitted to ApJ, you can read more on the [arXiv](https://arxiv.org/abs/2603.06790) for now! 
 
 ---
 
 
 ### Statistical Estimates of Population-Level Binary Properties
 
-Building on my work with spotted rotational variables, this project develops a Monte Carlo-based method to estimate the average primary masses, companion mass ranges, inclination limits for recognizing a rotational variable, and spreads in primary mass for populations of binary stars. The model fits a population's distribution in binary mass function and allows for a probability that some of the mass functions are incorrectly estimated. We test the method on synthetic data to assess its sensitivity to each model parameter, finding that we are most sensitive to the average primary mass and companion mass range, with less sensitivity to inclination limit and primary mass spread. We then apply the model to the MS2b, G1/3, G2, and G4b stars described below. The following plot shows the result for the binary mass function distribution of varying each model parameter separately, followed by the five group's distributions.
+This project develops a Monte Carlo-based method to estimate the binary properties of populations of spotted rotational variables using their radial velocity curves from APOGEE. The following plot shows the result for the binary mass function distribution of varying each model parameter (e.g., primary mass and its spread, mass ratio, minimum inclination), followed by the distributions for five groups of spotted rotational variables.
 
 ![binaries](../images/ROTfits_demo.png)
 
@@ -24,7 +34,7 @@ This work is published in MNRAS, read more [here](https://doi.org/10.1093/mnras/
 
 ### Spotted Rotational Variable Stars with ASAS-SN, _Gaia_, and APOGEE
 
-This work examines the properties of roughly 50,000 spotted rotational variables discovered in the [ASAS-SN](https://www.astronomy.ohio-state.edu/asassn/) variable stars catalog. We divided the rotators into 7 groups based on their separation in the space of luminosity versus rotation period (see the left panel of the figure below), and their radial velocity scatter (a proxy for binarity; not shown in the figure). There are three groups of main sequence stars: a group of slowly rotating (10-30 days) likely single stars with a limited range of temperatures (MS1), a group os more rapidly rotating (periods of ~days) single stars spanning the lower main sequence up to the Kraft break (MS2s) and a group of tidally-locked binaries (MS2b). There are four groups of giants: a group of heavily spotted and tidally locked RS CVn-type binaries with periods of 10's of days (G1/3), a group of less luminous sub-subgiants with periods of ~10 days (G2), a group of subsynchrounously rotating binaries with periods approaching 100 days (G4b), and a group of single red giants which are almost certainly merger remnants (G4s). The following plot shows the rotational variables distribution in rotation period/luminosity space (left) and on a color magnitude digram with overlayed isochrones (right).
+This work examines the properties of roughly 50,000 spotted rotational variables discovered in the [ASAS-SN](https://www.astronomy.ohio-state.edu/asassn/) variable stars catalog. The figure below divides the rotators into groups based on their separation in luminosity and rotation period. The groups are distinguished by their evolutionary phase and binarity, including (sub- and super-)syncronous tidally interacting systems.
 
 ![rotational variables in period/luminosity and color/magnitude space](../images/ROTs.png)
 
