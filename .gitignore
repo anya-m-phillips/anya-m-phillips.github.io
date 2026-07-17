@@ -1,43 +1,16 @@
 # Ignore the contents of the _site directory
 _site/
 
-### ignore the sitemap ;; 
-# markdown_generator/
-_teaching/
-_posts/
-_talks/
-_publications/
-_portfolio/
-markdown_generator/
-_drafts/
-
-### pages to ignore
-
-
-_pages/talkmap.html
-
-_pages/year-archive.html
-
-_pages/category-archive.html
-_pages/collection-archive.html
-_pages/tag-archive.html
-
-_pages/talks.html
-_pages/teaching.html
-_pages/portfolio.html
-_pages/page-archive.html
-_pages/publications.md
-_pages/non-menu-page.md
-_pages/markdown.md
-# _pages/sitemap.md
-
-
 # Ignore the directory for local files during development
 local/
 
 # Ignore the Gemfile that is generated
 Gemfile.lock
 
-# Ingore files created by npm
+# Ignore files created by npm
 node_modules
 package-lock.json
+
+# OS / editor cruft
+.DS_Store
+.ipynb_checkpoints/
