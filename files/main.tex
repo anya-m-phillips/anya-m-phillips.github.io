@@ -1,0 +1,422 @@
+%-------------------------
+% Resume in Latex
+% Author : Matty
+% Based on: https://github.com/jakegut/resume (which was based on https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{tikz,xcolor,hyperref} % for orcid logo, hyperlinks
+
+\input{glyphtounicode}
+
+% -------------------- FONT --------------------
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{OliveGreen}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{OliveGreen}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% Orcid icon
+\definecolor{lime}{HTML}{A6CE39}
+\DeclareRobustCommand{\orcidicon}{%
+	\begin{tikzpicture}
+	\draw[lime, fill=lime] (0,0) 
+	circle [radius=0.16] 
+	node[white] {{\fontfamily{qag}\selectfont \tiny ID}};
+	\draw[white, fill=white] (-0.0625,0.095) 
+	circle [radius=0.007];
+	\end{tikzpicture}
+	\hspace{-2mm}
+}
+
+\foreach \x in {A, ..., Z}{%
+	\expandafter\xdef\csname orcid\x\endcsname{\noexpand\href{https://orcid.org/\csname orcidauthor\x\endcsname}{\noexpand\orcidicon}}
+}
+
+\newcommand{\orcidauthorA}{0009-0005-1914-974X} 
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+% \begin{flushright}
+%   \vspace{-4pt}
+%   \color{gray}
+%   \item
+%   Last Updated on September 2nd, 2023
+% \end{flushright}
+
+\vspace{-7pt}
+
+\begin{center}
+    \textbf{\Huge \scshape Anya Phillips} \\ \vspace{8pt}
+    \small 
+    \faIcon{github}
+    \href{https://github.com/anya-m-phillips}{\underline{github.com/anya-m-phillips}} $  $
+    \faIcon{code}
+    \href{https://anya-m-phillips.github.io/}
+    {\underline{anya-m-phillips.github.io}} $  $
+    % \faIcon{linkedin}
+    % \href{https://linkedin.com/in/anya-phillips-53032b278}{\underline{linkedin.com/in/anya-phillips}} $  $
+    \faIcon{envelope}
+    \href{mailto:anya.phillips@cfa.harvard.edu}
+    {\underline{anya.phillips@cfa.harvard.edu}}
+    \orcidA{\href{https://orcid.org/0009-0005-1914-974X}{\underline{0009-0005-1914-974X}}}
+\end{center}
+
+% -------------------- appointments --------------------
+\section{Professional Appointments}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+        {\textbf{Graduate Research Assistant}, Center for Astrophysics $|$ Harvard \& Smithsonian\vspace{8pt}}{2024--present}
+        {\footnotesize{Advisor: Charlie Conroy}}
+        \resumeProjectHeading
+        {\textbf{Undergraduate Research Assistant}, OSU \vspace{8pt}}{2022--2024}
+        {\footnotesize{Advisor: Christopher Kochanek}}
+        % \resumeItemListStart
+        %     \resumeItem{Explored period, luminosity, binarity, rotation speed, and starspot coverage in order to categorize spotted rotational variable stars in the ASAS-SN catalog}
+        %     \resumeItem{Found orbital solutions for active red giant rotational variables in binary systems using APOGEE radial velocities and ASAS-SN rotation periods, then statistically determined their binary properties by applying Monte Carlo fitting methods to their binary mass function distributions}
+        %     \resumeItem{Developed data analysis code in Python}
+        %     \resumeItem{Associated first-author publications (see below)}
+        % \resumeItemListEnd
+        \resumeProjectHeading
+        {\textbf{NSF REU Intern}, Smithsonian Astrophysical Observatory \vspace{8pt}}{2023}
+        {\footnotesize{Advisors: Cecilia Garraffo, Joshua Wing, Phillip Cargile}}
+        % \resumeItemListStart
+        %     \resumeItem{Implemented transfer learning in a hierarchical Bayesian model of deep neural networks for stellar parameter estimation to improve its performance on observational data}
+        %     \resumeItem{Automated transfer learning and model evaluation routines in Python to allow future researchers to modify the transfer learning dataset and implement it in their own models}
+        %     \resumeItem{Altered the model to make parameter estimates directly from photometry rather than from surface temperature and luminosity}
+        %     \resumeItem{Associated GitHub repository: \textcolor{cyan}{\href{https://github.com/anya-m-phillips/StelNet_Transfer_Learning}{anya-m-phillips/StelNet\_Transfer\_Learning}}}
+        %     % \resumeItem{Published to GitHub and spigotmc.org}
+        % \resumeItemListEnd
+
+        % \resumeProjectHeading
+        % {\textbf{Department of Materials Science and Engineering} $|$ OSU; \emph{Undergraduate Researcher}\vspace{8pt}}{Spring, 2022}
+        % {\footnotesize{Advisor: Wolfgang Windl}}
+        % \resumeItemListStart
+        %     \resumeItem{Performed Kronig-Penney modeling of band structure in Matlab}
+        %     \resumeItem{Simulated Si high-pressure phase transitions with the VASP code}
+        %     \resumeItem{Modeled interatomic interactions with Morse and Lennard-Jones potentials}
+        % \resumeItemListEnd
+
+        % \resumeProjectHeading
+        % {\textbf{Polaris Mentorship Program} $|$ OSU; \emph{Undergraduate Mentee}\vspace{8pt}}{Spring, 2022}
+        % {\footnotesize{Graduate Mentor: Wynne Turner}}
+        % \resumeItemListStart
+        %     \resumeItem{Redshift estimation of eBOSS quasars}
+        %     \resumeItem{Development of data analysis code in Python}
+        % \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Harvard University}{2029 (Intended)}
+      {Ph.D., Astronomy and Astrophysics}{}
+    \resumeSubheading
+      {The Ohio State University}{2024}
+      {B.S., Physics and Astronomy; Minor in Mathematics}{}
+    % \resumeSubheading
+    %   {Columbus State Community College}{2018--2020}
+    %   {Transient Student Program}{}
+      
+    % \resumeSubheading
+    %   {Boring High School \footnotesize{(Dual Enrollment at Maple Community College)}}{June 2022}
+    %   {}{GPA: 4.44/4.0}
+
+    % \vspace{-10pt}
+    % \subsection{Relevant Coursework}
+    %   \textbf{Grades:} Exclusively A’s and AP Scores of 5/5 on all listed, completed courses\\
+    %   \textbf{Courses:} AP Computer Science A, Intro to Programming, Object-Oriented Programming, Data Structures (in progress), Embedded Systems, Logic Design (in progress), AP Calculus BC (and AP Calculus AB Subscore), Calculus III, Calculus IV, Discrete Mathematics, Linear Algebra, AP Statistics, Probability and Statistics I (in progress), AP Physics 1, AP Physics C: Mechanics, Principles of Engineering\\
+    %   \textbf{Awards:} Dean's Honor List (at Cool University, for the fall, winter, and spring quarters each), 2x AP Scholar with Distinction Awards, World Language History Award (for Spanish)
+
+  \resumeSubHeadingListEnd
+
+
+% -------------------- PUBLICATIONS ---------------------
+\section{Publications Summary}
+4 publications: 3 first author, 1 contributing author. \href{https://scixplorer.org/search?d=general&fq=%7B%21type%3Daqp+v%3D%24fq_range%7D&fq=%7B%21type%3Daqp+v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&fq_range=(year%3A2022-2026)&p=1&q=author%3A%22Phillips%2C+Anya%22+&sort=score+desc&sort=date+desc}{\textcolor{cyan}{Full publication list here}}.
+% \resumeSubHeadingListStart
+
+% % First Author Section
+% \item[] { \textbf{First Author}}
+
+% \item[]
+% \textit{The Binary Properties of Stellar Streams are Set by Cluster Dynamics} \\
+% Phillips, A., Conroy, C., Nibauer, J., Wang, L., Chandra, V., Bonaca, A., Strader, J., MacLeod, M. \\
+% Submitted to ApJ;  \href{https://arxiv.org/abs/2603.06790}{\textcolor{cyan}{arXiv:2603.06790}}
+
+% \item[]
+% \textit{Statistical Estimates of the Binary Properties of Rotational Variables} \\
+% \textbf{Phillips, A.} and Kochanek, C.S. \\
+% \textit{Monthly Notices of the Royal Astronomical Society}, Volume 539, Issue 3, May 2025, Pages 2608-2620 \\
+% \href{https://doi.org/10.1093/mnras/staf634}{\textcolor{cyan}{https://doi.org/10.1093/mnras/staf634}}
+% % \vspace{8pt}
+% \item[]
+% \textit{Seven Classes of Rotational Variables From a Study of 50,000 Spotted Stars with ASAS-SN, Gaia, and APOGEE} \\
+% \textbf{Phillips, A.}, Kochanek, C.S., Jayasinghe, T., Cao, L., Christy, C.T., Rowan, D.M., Pinsonneault, M.H. \\
+% \textit{Monthly Notices of the Royal Astronomical Society}, Volume 527, Issue 3, January 2024, Pages 5588–5602 \\
+% \href{https://doi.org/10.1093/mnras/stad3564}{\textcolor{cyan}{https://doi.org/10.1093/mnras/stad3564}}
+
+
+% \vspace{8pt}
+
+% % Contributing Author Section
+% \item[] { \textbf{Contributing Author}}
+
+% \item[]
+% \textit{Rotational Variables: Kepler versus ASAS-SN} \\
+% Stethem, J., Kochanek, C.S., \textbf{Phillips, A.}, Cao, L, Pinsonneault, M.H. \\
+% Submitted to the Open Journal of Astrophysics;  \href{https://arxiv.org/abs/2506.13919}{\textcolor{cyan}{arXiv:2506.13919}}
+
+% \resumeSubHeadingListEnd
+
+
+% --------------------- Awards -------------------------
+\section{Awards and Honors}
+ \resumeSubHeadingListStart
+        \resumeProjectHeading{{\small{\textit{National}}}}{}
+        \resumeProjectHeading{\textbf{NSF Graduate Research Fellowship}}{2024}
+        \resumeProjectHeading{\textbf{Goldwater Scholarship}}{2023}
+        
+        \resumeProjectHeading{{\small{\textit{University}}}}{}
+        \resumeProjectHeading{\textbf{L. Earl Slusher Scholarship} $|$ OSU Department of Astronomy}{2024}
+        \resumeProjectHeading{\textbf{Physics Senior Award} $|$ OSU Department of Physics}{2024}
+        \resumeProjectHeading{\textbf{Smith Junior Award} $|$ OSU Department of Physics}{2023}
+        \resumeProjectHeading{\textbf{Ann Slusher Tuttle Award} $|$ OSU Department of Astronomy}{2022}
+        % \resumeProjectHeading{\textbf{Dean's List} 8/8 Semesters $|$ OSU}{2020--2024}
+        % \resumeProjectHeading{\textbf{Smith Sophomore Award} $|$ OSU Department of Physics}{2022}
+        % \resumeProjectHeading{\textbf{Helen Cowen Book Award} $|$ OSU Department of Physics}{2021}
+
+ \resumeSubHeadingListEnd
+
+% -------------------- SKILLS --------------------
+% \section{Technical Skills}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+    
+%      \textbf{Proficient in}{: Python (Relevant libraries: Pandas, NumPy, SciPy, Astropy, Matplotlib, PyTorch, Scikit-Learn), \LaTeX} \\
+     
+%      \textbf{Experience with}{: Git/GitHub, TOPCAT, Linux, MATLAB, Mathematica}
+     
+%      % \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+     
+%      % \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+     
+%     }}
+%  \end{itemize}
+
+% %------- relevant coursework -----
+% \section{Relevant Coursework}
+%     \resumeSubHeadingListStart
+%         \resumeProjectHeading{\textbf{Physics}\vspace{8pt}}{}
+%         {Physics 2300, 2301: Classical Mechanics Series\hfill{AU21, SP22}}\newline
+%         {Physics 3700: Experimental Physics Instrumentation and Data Analysis Lab\hfill{SP22}}\newline
+%         {Physics 5400H, 5401H: Honors Intermediate and Advanced Electromagnetism\hfill{AU22, SP23}}\newline
+%         {Physics 5500H, 5501H: Honors Quantum Mechanics I and II\hfill{AU22, SP23}}\newline
+%         {Physics 5600: Statistical Mechanics\hfill{AU23}}\newline
+%         {Physics 5680: Big Data Analytics and Machine Learning for Physicists\hfill{AU23}}\newline
+%         {Physics 5700: Advanced Lab\hfill{SP24}}
+    
+%         \resumeProjectHeading{\textbf{Astronomy}\vspace{8pt}}{}
+%         {Astronomy 2291: Basic Astrophysics and Planetary Astronomy\hfill{AU21}}\\
+%         {Astronomy 2292: Stellar, Galactic, and Extragalactic Astronomy \& Astrophysics\hfill{SP22}}\\
+%         {Astronomy 3350: Methods of Astronomical Observation and Data Analysis\hfill{AU22}}\newline
+%         {Astronomy 5682: Introduction to Cosmology\hfill{SP23}}\newline
+%         {Astronomy 5681: Principles of Stellar Evolution and Nucleosynthesis\hfill{SP24}}\newline
+%         {Astronomy 5550: Advanced Astronomy Data Analysis\hfill{SP24}}  
+    
+%         \resumeProjectHeading{\textbf{Mathematics}\vspace{8pt}}{}
+%         {Math 1151, 1152, 2153: Calculus Series\hfill{SP18, SP19, AU19}}\\
+%         {Math 2415: Ordinary and Partial Differential Equations\hfill{SP20}}\\
+%         {Math 2568: Linear Algebra\hfill{AU20}}\\
+%         {Math 3345: Foundations in Higher Mathematics\hfill{SP21}}\\
+%         {Math 4552: Complex Analysis\hfill{SU21}}\\
+%         {Math 4551: Vector Analysis\hfill{AU21}}\\
+%     \resumeSubHeadingListEnd
+    
+% ------------------- Presentations ----------------
+\section{Presentations}
+ \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{ITC Luncheon}, CfA $|$ Harvard \& Smithsonian}{April 2026}
+
+        \resumeProjectHeading
+          {\textbf{MMTO Science Symposium}, University of Arizona}{April 2026}
+
+        \resumeProjectHeading
+          {\textbf{Conference for Undergraduate Women in Physcs} poster session, West Virginia University}{January 2024}
+          % {``Transfer Learning for Improved Stellar Parameter Estimation"}\newline
+          % {Poster Presentaiton}
+        
+        \resumeProjectHeading
+          {\textbf{American Astronomical Society}, 243$^{\rm{rd}}$ meeting, iPoster session, New Orleans, LA}{January 2024}
+          % {``Transfer Learning for Improved Stellar Parameter Estimation"}\newline
+          % {iPoster Presentaiton}
+
+        % \resumeProjectHeading
+          % {\textbf{IAIFI Summer Workshop} poster session, Northeastern University}{August 13, 2023}
+          % {``Transfer Learning for Improved Stellar Parameter Estimation"}\newline
+          % {Poster Presentation}
+
+        \resumeProjectHeading
+          {\textbf{REU Symposium}, Center for Astrophysics $|$ Harvard \& Smithsonian (\textcolor{cyan}{\href{https://www.youtube.com/live/BS4W6ua18c4?si=DTzKrgAEs4IxsC2a&t=7130}{video}})}{August 2023}
+          % {``Transfer Learning for Improved Stellar Parameter Estimation"}\newline
+          % {Live-streamed Oral Presentation, available \textcolor{cyan}{\href{https://www.youtube.com/live/BS4W6ua18c4?si=DTzKrgAEs4IxsC2a&t=7130}{here}}}   
+
+        \resumeProjectHeading
+          {\textbf{Spring Undergraduate Research Festival} poster session, OSU}{April 2023}
+          % {``Understanding the ASAS-SN Rotational Variables"}\newline
+          % {Poster Presentation}      
+
+        \resumeProjectHeading
+          {\textbf{Conference for Undergraduate Women in Physics} poster session, Brown University}{January 2023}
+          % {``Understanding the ASAS-SN Rotational Variables"}\newline
+          % {Poster Presentation}
+
+        \resumeProjectHeading
+          {\textbf{Summer Undergraduate Research Symposium}, Department of Astronomy, OSU}{July 2022}
+          % {``Categorizing ASAS-SN Rotational Variables"}\newline
+          % {Oral Presentation}
+
+%         % \resumeProjectHeading
+%         %   {\textbf{Polaris Mentorship Program Symposium}, Department of Physics, OSU\vspace{8pt}}{April 18, 2022}
+%         %   {``Redshift Estimation of eBOSS Quasars Using Python"}\newline
+%         %   {Poster Presentation}
+
+  \resumeSubHeadingListEnd
+
+% -------------------- EXPERIENCE --------------------
+\section{Observatory Allocations}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {MMT Observatory, Hectochelle, 6 Nights (PI)}{2026}
+  \resumeSubHeadingListEnd
+
+\section{Teaching}
+  \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {Teaching Fellow, ASTRON 16: Stellar and Planetary Astrophysics, Harvard}{Spring 2026}  
+          % {\small{ASTRON 16: Stellar and Planetary Astrophysics}}
+
+        \resumeProjectHeading
+          {Instructional Aide, Teaching Assistant, ASTRON 1101: From Planets to Cosmos, OSU}{2021--2024}      
+          % {\small{ASTRON 1101: From Planets to the Cosmos, ASTRON 1141: Life in the Universe, ASTRON 2140: Planets \& the Solar System, ASTRON 2292: Stellar, Galactic, and Extragalactic Astrophysics}}
+        \resumeProjectHeading
+          {Instructional Aide, ASTRON 1141: Life in the Universe, OSU}{2022-2023}
+
+        \resumeProjectHeading
+          {Student Tutor, Math and Statistics Learning Center, OSU}{2021--2022}
+          % \small{College Algebra, Calculus I, Ordinary and Partial Differential Equations, and Linear Algebra}
+          
+    \resumeSubHeadingListEnd 
+
+% --------------------- Leadership -------------------
+\section{Professional Service}
+ \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+        {\textbf{Representative, Harvard Astronomy Student-Faculty Council}}{2024--2026}
+
+        \resumeProjectHeading
+        {\textbf{Representative, Harvard Astronomy Mental Health Committee}}{2025}
+        % \resumeProjectHeading
+        %  {\textbf{Astronomical Society at OSU} $|$ \emph{Secretary}}{Spring, 2022 -- Spring, 2023}
+        %  \resumeItemListStart
+        %     \resumeItem{Collaborated with other leadership to plan and organize club meetings and activities, including a weekend trip to Green Bank Observatory in March, 2023}
+        %     \resumeItem{Lead the club media committee, which involved compiling, producing articles for, and distributing a monthly club newsletter}
+        % \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{Leadership Member, \textcolor{cyan}{\href{https://astronomy.osu.edu/polaris-mentoring-program}{Polaris Mentoring Program}}}}{2023--2024}
+          % \resumeItemListStart
+          %    \resumeItem{Gathering undergraduate alumni testimonials to secure continued funding from program stake holders}
+          %    \resumeItem{Collaborating with other leadership to plan weekly mentorship course lessons and activities}
+          %    \resumeItem{Acting as a liason to the broader \textcolor{cyan}{\href{https://accessnetwork.org/}{Access Network}} as Polaris' Network Fellow (NF), including collaborating with NFs from other Access sites to develop an inter-site mentorship matching program}
+          % \resumeItemListEnd
+ \resumeSubHeadingListEnd
+
+
+\end{document}

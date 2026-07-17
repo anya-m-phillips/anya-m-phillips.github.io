@@ -40,22 +40,25 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
+// ---- Custom color overrides ----
+
+// Main body / reading area
 body {
-  background-color:#435058;
-  color:#ebeef0;
+  background-color: #6B5E62;
+  color: #ebeef0;
+}
+
+// Menu bar (masthead is the band, greedy-nav is the white layer on top of it)
+.masthead,
+.greedy-nav {
+  background: #D5CAD6;
+}
+
+// Footer (the other light band, kept consistent with the menu bar)
+.page__footer {
+  background-color: #D5CAD6;
 }
 
 .author__avatar img {
     border-radius: 0 !important;
 }
-// site-header {
-//     background-color:rgb(103, 3, 243) !important;
-// }
-
-// site-footer {
-//     background-color:rgb(3, 55, 243) !important;
-// }
-
-// navbar {
-//     background-color: rgb(239, 243, 3) !important;
-// }
