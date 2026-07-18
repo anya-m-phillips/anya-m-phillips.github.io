@@ -21,6 +21,7 @@
 \usepackage{xcolor}
 \usepackage{fontawesome5}
 \usepackage{tikz,xcolor,hyperref} % for orcid logo, hyperlinks
+\usepackage{etaremune} % Load the package
 
 \input{glyphtounicode}
 
@@ -47,12 +48,12 @@
 % Section formatting
 \titleformat{\section}{
   \vspace{-5pt}\scshape\raggedright\large
-}{}{0em}{}[\color{OliveGreen}\titlerule \vspace{-5pt}]
+}{}{0em}{}[\color{Black}\titlerule \vspace{-5pt}]
 
 % Subsection formatting
 \titleformat{\subsection}{
   \vspace{-4pt}\scshape\raggedright\large
-}{\hspace{-.15in}}{0em}{}[\color{OliveGreen}\vspace{-8pt}]
+}{\hspace{-.15in}}{0em}{}[\color{Black}\vspace{-8pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -128,19 +129,19 @@
 \vspace{-7pt}
 
 \begin{center}
-    \textbf{\Huge \scshape Anya Phillips} \\ \vspace{8pt}
-    \small 
-    \faIcon{github}
-    \href{https://github.com/anya-m-phillips}{\underline{github.com/anya-m-phillips}} $  $
-    \faIcon{code}
-    \href{https://anya-m-phillips.github.io/}
-    {\underline{anya-m-phillips.github.io}} $  $
+    \textbf{\Huge \scshape Anya Phillips} \\ %\vspace{8pt}
+    % \small 
+    % \faIcon{github}
+    % \href{https://github.com/anya-m-phillips}{\underline{github.com/anya-m-phillips}} $  $
+    % \faIcon{code}
+    % \href{https://anya-m-phillips.github.io/}
+    % {\underline{anya-m-phillips.github.io}} $  $
     % \faIcon{linkedin}
     % \href{https://linkedin.com/in/anya-phillips-53032b278}{\underline{linkedin.com/in/anya-phillips}} $  $
-    \faIcon{envelope}
-    \href{mailto:anya.phillips@cfa.harvard.edu}
-    {\underline{anya.phillips@cfa.harvard.edu}}
-    \orcidA{\href{https://orcid.org/0009-0005-1914-974X}{\underline{0009-0005-1914-974X}}}
+    % \faIcon{envelope}
+    % \href{mailto:anya.phillips@cfa.harvard.edu}
+    % {\underline{anya.phillips@cfa.harvard.edu}}
+    % \orcidA{\href{https://orcid.org/0009-0005-1914-974X}{\underline{0009-0005-1914-974X}}}
 \end{center}
 
 % -------------------- appointments --------------------
@@ -149,6 +150,7 @@
         \resumeProjectHeading
         {\textbf{Graduate Research Assistant}, Center for Astrophysics $|$ Harvard \& Smithsonian\vspace{8pt}}{2024--present}
         {\footnotesize{Advisor: Charlie Conroy}}
+        \vspace{-5pt}
         \resumeProjectHeading
         {\textbf{Undergraduate Research Assistant}, OSU \vspace{8pt}}{2022--2024}
         {\footnotesize{Advisor: Christopher Kochanek}}
@@ -158,6 +160,7 @@
         %     \resumeItem{Developed data analysis code in Python}
         %     \resumeItem{Associated first-author publications (see below)}
         % \resumeItemListEnd
+        \vspace{-5pt}
         \resumeProjectHeading
         {\textbf{NSF REU Intern}, Smithsonian Astrophysical Observatory \vspace{8pt}}{2023}
         {\footnotesize{Advisors: Cecilia Garraffo, Joshua Wing, Phillip Cargile}}
@@ -193,24 +196,19 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Harvard University}{2029 (Intended)}
-      {Ph.D., Astronomy and Astrophysics}{}
+      {Harvard University}{}
+      {A.M., Astronomy and Astrophysics}{2026}
+      \vspace{-20pt}
+    \resumeSubheading{}{}
+      {Ph.D., Astronomy and Astrophysics}{2029 (Intended)}
     \resumeSubheading
-      {The Ohio State University}{2024}
-      {B.S., Physics and Astronomy; Minor in Mathematics}{}
+      {The Ohio State University}{}
+      {B.S., Physics and Astronomy; Minor in Mathematics}{2024}
     % \resumeSubheading
     %   {Columbus State Community College}{2018--2020}
     %   {Transient Student Program}{}
-      
-    % \resumeSubheading
-    %   {Boring High School \footnotesize{(Dual Enrollment at Maple Community College)}}{June 2022}
-    %   {}{GPA: 4.44/4.0}
 
-    % \vspace{-10pt}
-    % \subsection{Relevant Coursework}
-    %   \textbf{Grades:} Exclusively A’s and AP Scores of 5/5 on all listed, completed courses\\
-    %   \textbf{Courses:} AP Computer Science A, Intro to Programming, Object-Oriented Programming, Data Structures (in progress), Embedded Systems, Logic Design (in progress), AP Calculus BC (and AP Calculus AB Subscore), Calculus III, Calculus IV, Discrete Mathematics, Linear Algebra, AP Statistics, Probability and Statistics I (in progress), AP Physics 1, AP Physics C: Mechanics, Principles of Engineering\\
-    %   \textbf{Awards:} Dean's Honor List (at Cool University, for the fall, winter, and spring quarters each), 2x AP Scholar with Distinction Awards, World Language History Award (for Spanish)
+
 
   \resumeSubHeadingListEnd
 
@@ -257,15 +255,15 @@
 % --------------------- Awards -------------------------
 \section{Awards and Honors}
  \resumeSubHeadingListStart
-        \resumeProjectHeading{{\small{\textit{National}}}}{}
+        % \resumeProjectHeading{{\small{\textit{National}}}}{}
         \resumeProjectHeading{\textbf{NSF Graduate Research Fellowship}}{2024}
         \resumeProjectHeading{\textbf{Goldwater Scholarship}}{2023}
         
-        \resumeProjectHeading{{\small{\textit{University}}}}{}
-        \resumeProjectHeading{\textbf{L. Earl Slusher Scholarship} $|$ OSU Department of Astronomy}{2024}
-        \resumeProjectHeading{\textbf{Physics Senior Award} $|$ OSU Department of Physics}{2024}
-        \resumeProjectHeading{\textbf{Smith Junior Award} $|$ OSU Department of Physics}{2023}
-        \resumeProjectHeading{\textbf{Ann Slusher Tuttle Award} $|$ OSU Department of Astronomy}{2022}
+        % \resumeProjectHeading{{\small{\textit{University}}}}{}
+        % \resumeProjectHeading{\textbf{L. Earl Slusher Scholarship} $|$ OSU Department of Astronomy}{2024}
+        % \resumeProjectHeading{\textbf{Physics Senior Award} $|$ OSU Department of Physics}{2024}
+        % \resumeProjectHeading{\textbf{Smith Junior Award} $|$ OSU Department of Physics}{2023}
+        % \resumeProjectHeading{\textbf{Ann Slusher Tuttle Award} $|$ OSU Department of Astronomy}{2022}
         % \resumeProjectHeading{\textbf{Dean's List} 8/8 Semesters $|$ OSU}{2020--2024}
         % \resumeProjectHeading{\textbf{Smith Sophomore Award} $|$ OSU Department of Physics}{2022}
         % \resumeProjectHeading{\textbf{Helen Cowen Book Award} $|$ OSU Department of Physics}{2021}
@@ -418,5 +416,60 @@
           % \resumeItemListEnd
  \resumeSubHeadingListEnd
 
+\pagebreak
+\section{Full Publication List}
+{ \textbf{Lead-author}}
+\vspace{-5pt}
+\begin{etaremune}
+  \item Anya Phillips, Charlie Conroy, Jacob Nibauer et al. (2026)\\
+  ``The Binary Properties of Stellar Streams are Set by Cluster Dynamics"\\
+  \emph{\href{https://iopscience.iop.org/article/10.3847/1538-4357/ae680b}{\textcolor{cyan}{The Astrophysical Journal, 1003, 188}}}
+  \item Anya Phillipss \& Christopher S. Kochanek (2024)\\
+  ``Statistical Estimates of the Binary Properties of Rotational Variables''\\
+  \emph{\href{https://doi.org/10.1093/mnras/staf634}{\textcolor{cyan}{Monthly Notices of the Royal Astronomical Society, 539, 3}}}
+  \item Anya Phillips, Christopher S. Kochanek, Tharindu Jayasinghe et al. (2023)\\
+  ``Seven Classes of Rotational Variables from a Study of 50,000 Spotted Stars with ASAS-SN, \emph{Gaia}, and APOGEE''\\
+  \emph{\href{https://doi.org/10.1093/mnras/stad3564}{\textcolor{cyan}{Monthly Notices of the Royal Astronomical Society, 527, 3}}}
+\end{etaremune}
+{ \textbf{Contributing author}}
+\vspace{-5pt}
+\begin{etaremune}
+  \item Jack Stethem, Christopher S. Kochanek, Anya Phillips et al. (2025)\\
+  "Rotational Variables: \emph{Kepler} vs ASAS-SN"\\
+  \emph{Submitted to the Open Journal of Astrophysics, \href{https://arxiv.org/abs/2506.13919}{\textcolor{cyan}{arXiv:2506.13919}}}
+\end{etaremune}
+% \resumeSubHeadingListStart
 
+% % First Author Section
+% \item[] { \textbf{First Author}}
+% \vspace{-5pt}
+% \item[]
+% \textit{The Binary Properties of Stellar Streams are Set by Cluster Dynamics} \\
+% \textbf{Phillips, A.}, Conroy, C., Nibauer, J., Wang, L., Chandra, V., Bonaca, A., Strader, J., MacLeod, M. \\
+% Submitted to ApJ;  \href{https://arxiv.org/abs/2603.06790}{\textcolor{cyan}{arXiv:2603.06790}}
+
+% \item[]
+% \textit{Statistical Estimates of the Binary Properties of Rotational Variables} \\
+% \textbf{Phillips, A.} and Kochanek, C.S. \\
+% \textit{Monthly Notices of the Royal Astronomical Society}, Volume 539, Issue 3, May 2025, Pages 2608-2620 \\
+% \href{https://doi.org/10.1093/mnras/staf634}{\textcolor{cyan}{https://doi.org/10.1093/mnras/staf634}}
+% % \vspace{8pt}
+% \item[]
+% \textit{Seven Classes of Rotational Variables From a Study of 50,000 Spotted Stars with ASAS-SN, Gaia, and APOGEE} \\
+% \textbf{Phillips, A.}, Kochanek, C.S., Jayasinghe, T., Cao, L., Christy, C.T., Rowan, D.M., Pinsonneault, M.H. \\
+% \textit{Monthly Notices of the Royal Astronomical Society}, Volume 527, Issue 3, January 2024, Pages 5588–5602 \\
+% \href{https://doi.org/10.1093/mnras/stad3564}{\textcolor{cyan}{https://doi.org/10.1093/mnras/stad3564}}
+
+
+% \vspace{8pt}
+
+% % Contributing Author Section
+% \item[] { \textbf{Contributing Author}}
+
+% \item[]
+% \textit{Rotational Variables: Kepler versus ASAS-SN} \\
+% Stethem, J., Kochanek, C.S., \textbf{Phillips, A.}, Cao, L, Pinsonneault, M.H. \\
+% Submitted to the Open Journal of Astrophysics;  \href{https://arxiv.org/abs/2506.13919}{\textcolor{cyan}{arXiv:2506.13919}}
+
+% \resumeSubHeadingListEnd
 \end{document}

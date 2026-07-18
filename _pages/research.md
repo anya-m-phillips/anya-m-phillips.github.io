@@ -6,6 +6,8 @@ author_profile: true
 ---
 
 ---
+![](../images/bpw_streamatlas.jpg)
+<small>Atlas of Milky Way stellar streams from [Bonaca & Price-Whelan (2024)](https://doi.org/10.1016/j.newar.2024.101713)</small>
 
 My PhD thesis proposal is tentatively titled "The Nature of Dark Matter from Stellar Stream Kinematics," but a more accurate working title might be "interesting dynamical systems to Anya." 
 
@@ -14,7 +16,7 @@ The thin and dynamically fragile stellar streams of globular clusters represent 
 Three relevant scales therefore emerge for us to study on the route to my aspirational thesis title: **the streams themselves, their progenitor clusters, and the individual binary systems within.** Throughout the rest of my degree I hope to populate this section with a list of projects across these three regimes using a combination of direct _N_-body simulations and high-resolution spectroscopy. 
 
 
-- [The binary properties of stellar streams are set by cluster dynamics](https://iopscience.iop.org/article/10.3847/1538-4357/ae680b)
+- [The binary properties of stellar streams are set by cluster dynamics (Phillips+26)](https://iopscience.iop.org/article/10.3847/1538-4357/ae680b)
 <!-- ### Binarity of Globular Cluster Streams -->
 
 <!-- The stellar streams of globular clusters have the potential to serve as dark matter detectors, as long as the individual orbital motions of binary stars do not confuse our kinematic measurements of them. In this paper, we use direct N-body simulations to study the binary populations in GC streams given in-cluster dynamical processing. We include a first estimate of the added radial velocity dispersion from undetected binaries in upcoming dark matter-focused surveys like [Via](https://via-project.org/) (below).
@@ -26,8 +28,8 @@ Three relevant scales therefore emerge for us to study on the route to my aspira
 ---
 Rotation provides a powerful stellar population diagnostic and is essential to understanding stellar structure and evolution. As an undergraduate, my research focus was on stellar rotation and binarity through the study of spotted rotational variables in the ASAS-SN catalog. 
 
-- [Seven classes of rotational variables from a study of 50,000 spotted stars with ASAS-SN, _Gaia_, and APOGEE](https://academic.oup.com/mnras/article/527/3/5588/7438887?login=false)
-- [Statistical estimates of the binary properties of rotational variables](https://academic.oup.com/mnras/article/539/3/2608/8115781)
+- [Seven classes of rotational variables from a study of 50,000 spotted stars with ASAS-SN, _Gaia_, and APOGEE (Phillilps+23)](https://academic.oup.com/mnras/article/527/3/5588/7438887?login=false)
+- [Statistical estimates of the binary properties of rotational variables (Phillips+24)](https://academic.oup.com/mnras/article/539/3/2608/8115781)
 
 <!-- ### Statistical Estimates of Population-Level Binary Properties
 
