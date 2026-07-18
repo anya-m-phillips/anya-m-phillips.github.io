@@ -46,7 +46,8 @@ $c-bg:     #435C72;  // body, menu bar (both layers), footer
 $c-accent: #F2C0BA;  // markdown (#) headings + hyperlinks
 $c-text:   #DCD7D0;  // menu items + all other text
 
-// Backgrounds: body, both menu-bar layers, footer
+// Backgrounds: html (fills behind the pinned footer), body, both menu-bar layers, footer
+html,
 body,
 .masthead,
 .greedy-nav,
