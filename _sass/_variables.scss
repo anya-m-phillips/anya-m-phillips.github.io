@@ -27,10 +27,13 @@ $times                      : Times, serif;
 $bodoni                     : "Bodoni MT", serif;
 $calisto                    : "Calisto MT", serif;
 $garamond                   : Garamond, serif;
+$kameron                    : "Kameron", Georgia, serif;  // Google Font, loaded in head/custom.html
+$inter                      : "Inter", sans-serif;
 
-$global-font-family         : $sans-serif;
-$header-font-family         : $sans-serif;
-$caption-font-family        : $serif;
+
+$global-font-family         : $inter;
+$header-font-family         : $inter;
+$caption-font-family        : $inter;
 
 /* type scale */
 $type-size-1                : 2.441em;  // ~39.056px

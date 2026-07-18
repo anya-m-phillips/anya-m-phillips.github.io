@@ -42,21 +42,58 @@
 
 // ---- Custom color overrides ----
 
-// Main body / reading area
-body {
-  background-color: #6B5E62;
-  color: #ebeef0;
-}
+$c-bg:     #435C72;  // body, menu bar (both layers), footer
+$c-accent: #F2C0BA;  // markdown (#) headings + hyperlinks
+$c-text:   #DCD7D0;  // menu items + all other text
 
-// Menu bar (masthead is the band, greedy-nav is the white layer on top of it)
+// Backgrounds: body, both menu-bar layers, footer
+body,
 .masthead,
-.greedy-nav {
-  background: #D5CAD6;
+.greedy-nav,
+.page__footer {
+  background-color: $c-bg;
 }
 
-// Footer (the other light band, kept consistent with the menu bar)
+// Default text color
+body,
 .page__footer {
-  background-color: #D5CAD6;
+  color: $c-text;
+}
+
+// Page titles + markdown headings (the `#` headings) + hyperlinks.
+// About uses the `single` layout (.page__content); Research & CV use the
+// `archive` layout (.archive) — so we target both content wrappers.
+.page__title,
+.page__content h1, .page__content h2, .page__content h3,
+.page__content h4, .page__content h5, .page__content h6,
+.archive h1, .archive h2, .archive h3,
+.archive h4, .archive h5, .archive h6,
+a {
+  color: $c-accent;
+}
+
+// Content hyperlinks: bold, no underline, grow slightly on hover
+.page__content a,
+.archive a {
+  // font-weight: 700;
+  text-decoration: none;
+  transition: font-size 0.15s ease;
+
+  &:hover {
+    font-weight:700;
+    text-decoration: none;
+    // font-size: calc(1em + 1pt);
+  }
+}
+
+// Menu items and the site title are links in the masthead — keep them as body text
+.masthead a,
+.greedy-nav a {
+  color: $c-text;
+
+  &:hover {
+    color: #DCD7D0;
+  }
 }
 
 .author__avatar img {
