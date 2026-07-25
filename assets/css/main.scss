@@ -87,14 +87,39 @@ a {
   }
 }
 
-// Menu items and the site title are links in the masthead — keep them as body text
+// Menu items and the site title are links in the masthead — keep them as body text,
+// and bold on hover (font-weight only; keep the same colour, no darkening).
 .masthead a,
 .greedy-nav a {
   color: $c-text;
 
   &:hover {
-    color: #DCD7D0;
+    color: $c-text;
+    font-weight: 700;
   }
+}
+
+// Site title is bold by default in the theme — normalise it so it bolds on hover like the rest
+.greedy-nav .visible-links li:first-child {
+  font-weight: normal;
+}
+
+// Remove the theme's animated underline bar on the menu links
+.greedy-nav .visible-links a:before {
+  display: none;
+}
+
+// Reserve each menu item's *bold* width up front with a hidden ghost of its label,
+// so hovering one item (which bolds it) doesn't make the others jump around.
+// The `data-text` attribute is set in _includes/masthead.html.
+.greedy-nav .visible-links a:after {
+  content: attr(data-text);
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  font-weight: 700;
+  pointer-events: none;
 }
 
 .author__avatar img {
