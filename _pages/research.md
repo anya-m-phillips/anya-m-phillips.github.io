@@ -9,10 +9,10 @@ author_profile: true
 <!-- ![](../images/bpw_streamatlas.jpg)
 <small>Atlas of Milky Way stellar streams from [Bonaca & Price-Whelan (2024)](https://doi.org/10.1016/j.newar.2024.101713)</small> -->
 <video autoplay loop muted playsinline style="display: block; width: 50%; max-width: 400px; height: auto; margin: 0 auto;">
-  <source src="{{ '/images/grid_rotation.mp4' | relative_url }}" type="video/mp4">
+  <source src="{{ '/images/grid_streams_ordered_labeled.mp4' | relative_url }}" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-<small>N-body realizations of stellar streams in the Milky Way</small>
+<small>N-body realizations of stellar streams in the Milky Way. The Sun and its orbit are also marked.</small>
 
 My PhD thesis proposal is tentatively titled "The Nature of Dark Matter from Stellar Stream Kinematics," but a more accurate working title might be "interesting dynamical systems to Anya." 
 
